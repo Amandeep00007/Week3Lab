@@ -19,7 +19,7 @@
             <input type="submit" value="+" name="value">
             <input type="submit" value="-" name="value">
             <input type="submit" value="*" name="value">
-            <input type="submit" value="%" name="value"><br>
+            <input type="submit" value="/" name="value"><br>
             Result: ${result}
         </form>
         

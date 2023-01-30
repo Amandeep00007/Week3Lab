@@ -60,15 +60,18 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                    value = nfirst * nsecond;
                break;
                
-               case"%":
-                   value = nfirst % nsecond;
+               case"/":
+                   value = nfirst / nsecond;
                break;
            }
            
            request.setAttribute("value", value);
+           
+           getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp")
+               .forward(request, response);
        }
-       getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp")
-               .forward(request, response);   
+//       getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp")
+//               .forward(request, response);   
     }
 
 }
