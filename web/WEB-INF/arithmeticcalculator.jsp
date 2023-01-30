@@ -9,9 +9,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Arithmetic Calculator</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Arithmetic Calculator</h1>
+        <form method="post" action="arithmetic">
+            First: <input type="number" name="first"><br>
+            Second: <input type="number" name="second"><br>
+            <input type="submit" value="+" name="value">
+            <input type="submit" value="-" name="value">
+            <input type="submit" value="*" name="value">
+            <input type="submit" value="%" name="value"><br>
+            Result: ${result}
+        </form>
+        
+        <p> ${message}</p>
+        <p> ${value} </p>
+        
+        <a href ="age"> Age Calculator</a> 
+        
     </body>
 </html>
